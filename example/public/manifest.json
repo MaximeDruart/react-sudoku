@@ -1,6 +1,6 @@
 {
-  "short_name": "react-sudoku",
-  "name": "react-sudoku",
+  "short_name": "@maximedruart/react-sudoku",
+  "name": "@maximedruart/react-sudoku",
   "icons": [
     {
       "src": "favicon.ico",

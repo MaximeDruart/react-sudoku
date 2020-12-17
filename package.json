@@ -1,7 +1,7 @@
 {
-  "name": "react-sudoku",
+  "name": "@maximedruart/react-sudoku",
   "version": "1.0.0",
-  "description": "react sudoku component with new grid each day",
+  "description": "react sudoku component with grids renewed daily",
   "author": "MaximeDruart",
   "license": "MIT",
   "repository": "MaximeDruart/react-sudoku",
@@ -49,8 +49,5 @@
   },
   "files": [
     "dist"
-  ],
-  "dependencies": {
-    "styled-components": "^5.2.1"
-  }
+  ]
 }

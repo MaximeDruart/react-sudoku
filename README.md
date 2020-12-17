@@ -1,13 +1,13 @@
-# react-sudoku
+# @maximedruart/react-sudoku
 
-> react sudoku component with new grid each day
+> react sudoku component with grids renewed daily
 
-[![NPM](https://img.shields.io/npm/v/react-sudoku.svg)](https://www.npmjs.com/package/react-sudoku) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/@maximedruart/react-sudoku.svg)](https://www.npmjs.com/package/@maximedruart/react-sudoku) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
 ```bash
-npm install --save react-sudoku
+npm install --save @maximedruart/react-sudoku
 ```
 
 ## Usage
@@ -15,8 +15,8 @@ npm install --save react-sudoku
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-sudoku'
-import 'react-sudoku/dist/index.css'
+import MyComponent from '@maximedruart/react-sudoku'
+import '@maximedruart/react-sudoku/dist/index.css'
 
 class Example extends Component {
   render() {
