@@ -165,12 +165,7 @@ const API_ENDPOINT = 'https://papergames-hetic.herokuapp.com/sudoku/'
 // const API_ENDPOINT_LOCAL = 'http://localhost:3001/sudoku/'
 const SELECT_ALL = 'SELECT_ALL'
 
-const Sudoku = ({ date }) => {
-  // const [sudoku, setSudoku] = useState({
-  //   puzzle: "",
-  //   solution: "",
-  //   difficulty: "",
-  // })
+const Sudoku = ({ key }) => {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
 
@@ -178,7 +173,7 @@ const Sudoku = ({ date }) => {
 
   const [isNoteMode, setIsNoteMode] = useState(false)
 
-  const [dateState, setDateState] = useState(date || dateString)
+  const [dateState, setDateState] = useState(dateString)
 
   // no longer correct
   // const checkGrid = () => gridValues === sudoku.solution
@@ -354,7 +349,12 @@ const Sudoku = ({ date }) => {
       setError(null)
       try {
         // eslint-disable-next-line no-undef
-        const response = await fetch(`${API_ENDPOINT}${dateState}`)
+        const response = await fetch(`${API_ENDPOINT}${dateState}`, {
+          headers: {
+            'Content-Type': 'application/json',
+            'api-key': key
+          }
+        })
         console.log(response)
         const data = await response.json()
         if (data.error) {

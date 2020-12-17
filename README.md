@@ -13,15 +13,12 @@ npm install --save @maximedruart/react-sudoku
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React from 'react'
 
-import MyComponent from '@maximedruart/react-sudoku'
-import '@maximedruart/react-sudoku/dist/index.css'
+import Sudoku from '@maximedruart/react-sudoku'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+const Example = () => {
+  return <Sudoku key={YOUR_API_KEY} />
 }
 ```
 
