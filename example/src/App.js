@@ -1,10 +1,9 @@
 import React from 'react'
 
-import { ExampleComponent } from 'react-sudoku'
-import 'react-sudoku/dist/index.css'
+import Sudoku from 'react-sudoku'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return <Sudoku />
 }
 
 export default App
