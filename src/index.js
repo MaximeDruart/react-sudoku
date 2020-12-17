@@ -165,7 +165,7 @@ const API_ENDPOINT = 'https://papergames-hetic.herokuapp.com/sudoku/'
 // const API_ENDPOINT_LOCAL = 'http://localhost:3001/sudoku/'
 const SELECT_ALL = 'SELECT_ALL'
 
-const Sudoku = ({ key }) => {
+const Sudoku = ({ apiKey }) => {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
 
@@ -352,7 +352,7 @@ const Sudoku = ({ key }) => {
         const response = await fetch(`${API_ENDPOINT}${dateState}`, {
           headers: {
             'Content-Type': 'application/json',
-            'api-key': key
+            'api-key': apiKey
           }
         })
         console.log(response)

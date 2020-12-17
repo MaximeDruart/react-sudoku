@@ -18,7 +18,7 @@ import React from 'react'
 import Sudoku from '@maximedruart/react-sudoku'
 
 const Example = () => {
-  return <Sudoku key={YOUR_API_KEY} />
+  return <Sudoku apiKey={YOUR_API_KEY} />
 }
 ```
 
